@@ -5,7 +5,7 @@ class Ban10:
         self.bandits = [Bandit() for _ in range(10)]
         self.best_bandit_number = max(
             range(len(self.bandits)), key=lambda index: self.bandits[index].avg
-        ) + 1
+        )
 
     def play(self, arm_number):
         if not 0 <= arm_number < len(self.bandits):
